@@ -1,0 +1,253 @@
+/* =========================================================
+   Amplitude Core UI — Colors & Type Foundations
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+/* Gellix — local brand font files (see fonts/) */
+@font-face {
+  font-family: "Gellix";
+  src: url("fonts/Gellix-Regular.otf") format("opentype"),
+       url("fonts/Gellix-Regular.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Gellix";
+  src: url("fonts/Gellix-RegularItalic.otf") format("opentype"),
+       url("fonts/Gellix-RegularItalic.ttf") format("truetype");
+  font-weight: 400; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "Gellix";
+  src: url("fonts/Gellix-Light.otf") format("opentype"),
+       url("fonts/Gellix-Light.ttf") format("truetype");
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Gellix";
+  src: url("fonts/Gellix-LightItalic.otf") format("opentype"),
+       url("fonts/Gellix-LightItalic.ttf") format("truetype");
+  font-weight: 300; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "Gellix";
+  src: url("fonts/Gellix-Medium.otf") format("opentype"),
+       url("fonts/Gellix-Medium.ttf") format("truetype");
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Gellix";
+  src: url("fonts/Gellix-MediumItalic.otf") format("opentype"),
+       url("fonts/Gellix-MediumItalic.ttf") format("truetype");
+  font-weight: 500; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "Gellix";
+  src: url("fonts/Gellix-SemiBold.otf") format("opentype"),
+       url("fonts/Gellix-SemiBold.ttf") format("truetype");
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Gellix";
+  src: url("fonts/Gellix-SemiBoldItalic.otf") format("opentype"),
+       url("fonts/Gellix-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600; font-style: italic; font-display: swap;
+}
+
+:root {
+  /* ---------- Primary (Brand Blue) ---------- */
+  --primary-base:    #1e61f0;  /* Amplitude Blue */
+  --primary-plus2:   #0f3a99;  /* pressed */
+  --primary-minus1:  #558df7;  /* hover */
+  --primary-minus2:  #b1d3ff;  /* hover border / focus ring */
+  --primary-minus3:  #d5e9ff;  /* active/selected bg */
+  --primary-minus4:  #ebf5ff;  /* badge bg */
+  --primary-minus5:  #f5faff;  /* hover bg */
+
+  /* ---------- Monochrome (spine) ---------- */
+  --ink:             #1e2024;  /* primary text, cool-toned near-black */
+  --dark:            #232529;
+  --charcoal:        #35373d;
+  --slate:           #5a5e68;  /* body text secondary */
+  --gray:            #6f7480;
+  --mid-gray:        #8a8e99;
+  --silver:          #a8abb3;
+  --light-gray:      #c2c4ca;
+  --border:          #dedfe2;  /* universal border */
+  --surface:         #f4f5f6;  /* subtle bg */
+  --white:           #ffffff;
+
+  /* ---------- Semantic ---------- */
+  --positive-base:    #33a66c;
+  --positive-plus2:   #0a7640;
+  --positive-minus1:  #def2e8;
+
+  --negative-base:    #fc6965;
+  --negative-plus2:   #b41823;
+  --negative-minus1:  #fae2e2;
+
+  --notice-base:      #e77427;
+  --notice-plus2:     #9d5125;
+  --notice-minus1:    #fadecd;
+
+  /* ---------- Secondary (Teal) ---------- */
+  --secondary-base:    #22bbb3;
+  --secondary-plus5:   #0f5350;
+  --secondary-minus7:  #e3f0ef;
+
+  /* ---------- Data Accents ---------- */
+  --accent01-base: #fac400;  /* yellow */
+  --accent02-base: #259991;  /* teal */
+  --accent03-base: #d63c90;  /* pink */
+  --accent04-base: #686ce9;  /* indigo */
+
+  /* ---------- Semantic role aliases ---------- */
+  --fg-1: var(--ink);
+  --fg-2: var(--slate);
+  --fg-3: var(--gray);
+  --fg-disabled: var(--silver);
+  --bg-page: var(--white);
+  --bg-surface: var(--surface);
+  --bg-hover: var(--primary-minus5);
+  --border-default: var(--border);
+  --border-hover: var(--light-gray);
+  --border-focus: var(--primary-base);
+  --link: var(--primary-base);
+
+  /* ---------- Radius ---------- */
+  --radius-none: 0;
+  --radius-xs:   2px;
+  --radius-sm:   4px;
+  --radius-md:   6px;
+  --radius-lg:   8px;   /* universal component radius */
+  --radius-xl:   12px;
+  --radius-2xl:  16px;
+  --radius-3xl:  24px;
+  --radius-pill: 9999px;
+
+  /* ---------- Spacing (8px grid) ---------- */
+  --sp-0: 0;
+  --sp-0-5: 2px;
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+  --sp-14: 56px;
+  --sp-16: 64px;
+  --sp-24: 96px;
+
+  /* ---------- Shadows ---------- */
+  --shadow-sm: 0px 1px 4px rgba(0,0,0,0.10);
+  --shadow-md: 0px 2px 8px rgba(0,0,0,0.10);
+  --shadow-lg: 0px 4px 16px rgba(0,0,0,0.10);
+  --shadow-xl: 0px 6px 24px rgba(0,0,0,0.10);
+  --focus-ring: 0 0 0 3px var(--primary-minus2);
+
+  /* ---------- Type families ---------- */
+  --font-sans: "IBM Plex Sans", Helvetica, Arial, sans-serif;
+  --font-display: "Gellix", "IBM Plex Sans", Helvetica, Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", "Roboto Mono", "Source Code Pro", monospace;
+
+  /* ---------- Type scale (px + role) ---------- */
+  --fs-display-hero: 32px;      --lh-display-hero: 40px;  --ls-display-hero: -0.5px;
+  --fs-section-heading: 24px;   --lh-section-heading: 32px; --ls-section-heading: -0.3px;
+  --fs-subsection: 18px;        --lh-subsection: 28px;
+  --fs-body: 14px;              --lh-body: 22px;
+  --fs-body-sm: 12px;           --lh-body-sm: 18px;
+  --fs-section-label: 12px;     --lh-section-label: 20px; --ls-section-label: 1px;
+  --fs-caption: 10px;           --lh-caption: 14px;
+}
+
+/* ============ Base ============ */
+html, body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--fg-1);
+  background: var(--bg-page);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============ Semantic type roles ============ */
+.display-hero,
+h1 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--fs-display-hero);
+  line-height: var(--lh-display-hero);
+  letter-spacing: var(--ls-display-hero);
+  color: var(--ink);
+  margin: 0;
+}
+
+.section-heading,
+h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--fs-section-heading);
+  line-height: var(--lh-section-heading);
+  letter-spacing: var(--ls-section-heading);
+  color: var(--ink);
+  margin: 0;
+}
+
+.subsection,
+h3 {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: var(--fs-subsection);
+  line-height: var(--lh-subsection);
+  color: var(--ink);
+  margin: 0;
+}
+
+p, .body {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--ink);
+  margin: 0;
+}
+
+.body-sm {
+  font-size: var(--fs-body-sm);
+  line-height: var(--lh-body-sm);
+}
+
+.body-strong {
+  font-weight: 500;
+}
+
+.section-label {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--fs-section-label);
+  line-height: var(--lh-section-label);
+  letter-spacing: var(--ls-section-label);
+  color: #7D7F86;
+  text-transform: uppercase;
+}
+
+.caption {
+  font-size: var(--fs-caption);
+  line-height: var(--lh-caption);
+  color: var(--gray);
+}
+
+code, .code {
+  font-family: var(--font-mono);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+}
+
+::placeholder {
+  font-style: italic;
+  color: var(--gray);
+}

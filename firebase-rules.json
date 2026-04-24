@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "state": {
+      ".read": "auth != null && auth.token.email_verified == true && auth.token.email.endsWith('@amplitude.com')",
+      ".write": "auth != null && auth.token.email_verified == true && auth.token.email.endsWith('@amplitude.com')"
+    },
+    "activity": {
+      ".read": "auth != null && auth.token.email_verified == true && auth.token.email.endsWith('@amplitude.com')",
+      ".write": "auth != null && auth.token.email_verified == true && auth.token.email.endsWith('@amplitude.com')"
+    }
+  }
+}
